@@ -15,4 +15,26 @@ public class Fish extends  Animal{
     private void moveBackFins() {
         System.out.println("Back fin moving");
     }
+
+    @Override
+    public String toString() {
+        return "Fish{" +
+                "fins=" + fins +
+                ", gills=" + gills +
+                "} " + super.toString();
+    }
+
+    @Override
+    public void move(String speed) {
+        super.move(speed);
+        moveMuscles();
+        if (speed == "fast") {
+            moveBackFins();
+        }
+        System.out.println();
+    }
+
+    public void makeNoise() {
+
+    }
 }
