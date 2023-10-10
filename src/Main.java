@@ -11,6 +11,9 @@ public class Main {
 
         Dog miniSchnauzer = new Dog("Miniature Schnauzer", 7, "V shape", "Sabre");
         doAnimalStuff(miniSchnauzer, "fast");
+
+        Dog basenji = new Dog("Basenji", 10, "Hanging", "Curled");
+        doAnimalStuff(basenji, "fast");
     }
 
     public static void doAnimalStuff(Animal animal, String speed) {
