@@ -13,9 +13,13 @@ public class Game {
         player.loosHealth(11);
         System.out.println("Remaining health: " + player.healthRemaining());*/
 
-        EnhancedPlayer player = new EnhancedPlayer("Helena", 200, "Sword");
+        EnhancedPlayer player = new EnhancedPlayer("Helena", 500, "Sword");
         System.out.println(player.healthRemaining());
-
+        player.loosHealth(50);
+        System.out.println(player.healthRemaining());
+        player.restoreHealth(50);
+        player.loosHealth(100);
+        System.out.println(player.healthRemaining());
 
     }
 }
